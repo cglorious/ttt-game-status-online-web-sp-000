@@ -51,7 +51,7 @@ end
 def over?(board)
   if won?(board) == true #winning array[]
     true
-  else draw?(board) == true || full?(board) == true
+  elsif draw?(board) == true || full?(board) == true
     true
 #  else
 #    false

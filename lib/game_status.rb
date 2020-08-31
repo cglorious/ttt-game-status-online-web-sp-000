@@ -1,11 +1,7 @@
-require "pry"
-
-# Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-# Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -58,20 +54,6 @@ def over?(board)
   end
 end
 
-#      board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-#      won?() = []; full?() = false; draw
-#binding.pry
-
-#def winner(board)
-#  winning_array = won?(board) #[0,1,2]
-
-#  winning_array.any? do |i|
-#    if winning_array[0] == winning_array[1] && winning_array[1] == winning_array[2] #["X", "X", "X"]
-#      return winning_array[0]
-#    end
-#  end
-#end
-
 def winner(board)
   if won?(board) != false
     winning_array = won?(board)
@@ -82,8 +64,3 @@ def winner(board)
     return nil
   end
 end
-
-#board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
-#board = ["O", "O", "O", "O", "O", " ", " ", " ", " "]
-#board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
-#winner(board)

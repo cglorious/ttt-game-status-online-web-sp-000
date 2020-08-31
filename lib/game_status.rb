@@ -41,15 +41,15 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board) == [] && full?(board) == true
+  if won?(board) == false && full?(board) == true
     true
-  else won?(board) == [] && full?(board) == false
+  else won?(board) == false && full?(board) == false
     false
   end
 end
 
 def over?(board)
-  if won?(board) != []
+  if won?(board) != false
     true
   elsif draw?(board) == true || full?(board) == true
     true
@@ -73,12 +73,12 @@ end
 #end
 
 def winner(board)
-  if won?(board) != []
+  if won?(board) != false
     winning_array = won?(board)
     winning_array.all? do |i|
       return board[i]
     end
-  else won?(board) == []
+  else won?(board) == false
     return nil
   end
 end

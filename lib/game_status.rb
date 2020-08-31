@@ -53,8 +53,8 @@ def over?(board)
     true
   elsif draw?(board) == true || full?(board) == true
     true
-#  else
-#    false
+  else full?(board) != true
+    false
   end
 
 #binding.pry

@@ -1,4 +1,4 @@
-#require "pry"
+require "pry"
 
 # Helper Method
 def position_taken?(board, index)
@@ -56,6 +56,9 @@ def over?(board)
   else
     false
   end
+
+binding.pry
+
 end
 
 #def winner(board)

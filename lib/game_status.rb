@@ -56,10 +56,8 @@ def over?(board)
   else full?(board) == false
     false
   end
-
-#binding.pry
-
 end
+#binding.pry
 
 #def winner(board)
 #  winning_array = won?(board) #[0,1,2]

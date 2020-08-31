@@ -53,13 +53,13 @@ def over?(board)
     true
   elsif draw?(board) == true || full?(board) == true
     true
-  else won?(board) == [] || full?(board) == false
+  else won?(board) == [] && full?(board) == false && draw?(board) == false
     false
   end
 end
 
 #      board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-#      won? = []; full? = false;
+#      won?() = []; full?() = false; draw
 #binding.pry
 
 #def winner(board)

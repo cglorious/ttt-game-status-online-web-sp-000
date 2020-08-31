@@ -49,7 +49,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) == true #winning array[]
+  if won?(board) == true
     true
   elsif draw?(board) == true || full?(board) == true
     true

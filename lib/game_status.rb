@@ -57,7 +57,7 @@ def over?(board)
 #    false
   end
 
-binding.pry
+#binding.pry
 
 end
 
